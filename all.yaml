@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: rhoai-all 
+  description: RHOAI Samples
+spec:
+  targets:
+    - ./templates/ilab/template.yaml
