@@ -5,7 +5,7 @@ metadata:
   name: ilab
   title: Instructlab Notebook
   description: Jupyter notebook and Instructlab sample for RHOAI
-  tags: ["ai", "instructlab", "python", "notebook", "RHOAI"]
+  tags: ["RHOAI", "instructlab", "python", "notebook"]
 spec:
   type: service
   # These parameters are used to generate the input form in the frontend, and are
