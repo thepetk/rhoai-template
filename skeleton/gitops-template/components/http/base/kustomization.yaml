@@ -9,6 +9,4 @@ commonLabels:
 resources: 
 - initialize-namespace.yaml
 - deployment.yaml
-- route.yaml
-- service.yaml
 - rhoai/
