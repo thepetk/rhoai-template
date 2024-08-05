@@ -27,7 +27,7 @@ rules:
     verbs: ["get", "list"]
   - apiGroups: [""]
     resources: ["pods/exec"]
-    verbs: ["get", "create"]
+    verbs: ["get", "create", "list", "watch", "delete"]
   # The following roles ensure that the DSP job can set ownerreferences on notebook CRs
   - verbs:
       - get
