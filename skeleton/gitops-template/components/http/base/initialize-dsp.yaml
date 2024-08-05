@@ -38,7 +38,7 @@ spec:
               opendatahub.io/accelerator-name: ''
               openshift.io/description: ''
               openshift.io/display-name: ${{ values.name }}-notebook
-              notebooks.opendatahub.io/last-image-selection: 's2i-minimal-notebook:2024.1'
+              notebooks.opendatahub.io/last-image-selection: 's2i-minimal-notebook:latest'
               notebooks.opendatahub.io/last-size-selection: Small
             name: ${{ values.name }}-notebook
             namespace: ${{ values.namespace }}
@@ -93,7 +93,7 @@ spec:
                                             --ServerApp.base_url=/notebook/${{ values.namespace }}/${{ values.name }}-notebook
                                             --ServerApp.quit_button=False
                       - name: JUPYTER_IMAGE
-                        value: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-minimal-notebook:2024.1'
+                        value: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-minimal-notebook:latest'
                     ports:
                       - containerPort: 8888
                         name: notebook-port
@@ -104,7 +104,7 @@ spec:
                         name: ${{ values.name }}-notebook
                       - mountPath: /dev/shm
                         name: shm
-                    image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-minimal-notebook:2024.1'
+                    image: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-minimal-notebook:latest'
                     workingDir: /opt/app-root/src
                 enableServiceLinks: false
                 serviceAccountName: ${{ values.name }}-notebook
