@@ -18,3 +18,5 @@ The default application will be found in the namespace: ${{ values.namespace }}.
 ## RHOAI Notebook with Jupyter Notebooks and InstructLab
 
 This application focuses on deploying an RHOAI workbench notebook, running on Python 3.11 with `instructlab` installed.
+
+### TODO: Add instructions on how someone can access RHOAI.
